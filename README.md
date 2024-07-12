@@ -1,28 +1,28 @@
-# Descrição do projeto
+# Project Description
 
-O objetivo do projeto é construir uma interface via Gradio na qual seja possível o envio de arquivos em PDF contento informações a respeito de gastos pessoas e que através de técnica como Text Embeddings e com Generative AI o usuário possa obter informações relevantes a respeitos dos dados usados como input.
+The goal of this project is to create an interface using Gradio where users can upload PDF files containing personal expense information. Using techniques like Text Embeddings and Generative AI, the user will be able to get relevant information from the uploaded data.
 
-## Etapas
+## Steps
 ![image](https://github.com/CllsPy/Generative_AI/assets/96326019/920681bf-d869-4db2-aea6-a14b94ba0c8b)
-*fonte: autor*
+*source: author*
 <br>
 <br>
 
-1. Obter dados do usuário em formato adequado (PDF)
-2. Aplicar Text Embedding ao PDF de modo que o modelo (LLaMA) possa diferir)
-3. Enviar os dados para um VectorDataBase(Pinecode)
-4. Ajustar prompt e aspectos relacionados a resposta desejada
-5. Entregar dados ao modelo
-6. Avaliar resposta
+1. Get user data in the proper format (PDF)
+2. Apply Text Embedding to the PDF so that the model (LLaMA) can understand it
+3. Send the data to a Vector Database (Pinecode)
+4. Adjust the prompt and other aspects related to the desired response
+5. Provide the data to the model
+6. Evaluate the response
 
 ## Requirements
-A linguagem dinâmica escolhida foi Python, para IDE eu optei pelo Google Colab. Para implementar as etapas localmente passos adicionais são necessários e podem ser encontrados nas documentações das bibliotecas mencionadas neste arquivo. Além disso acesso a GPU.
+The chosen dynamic language is Python, and the preferred IDE is Google Colab. For local implementation, additional steps are needed, which can be found in the documentation of the libraries mentioned in this file. Additionally, access to a GPU is required.
 
 ### Packages
-Instale os seguintes pacotes
+Install the following packages:
 
-``` Python
-mport os
+```python
+import os
 import torch
 import pinecone
 import transformers
@@ -41,9 +41,9 @@ from langchain.chains import StuffDocumentsChain, LLMChain, ConversationalRetrie
 ```
 
 ## Launch
-Download the Python File `app.ipynb` and open it in the IDE.
+Download the Python file `app.ipynb` and open it in the IDE.
 
-## Autor
+## Author
 Carlos L. - [Github](https://github.com/CllsPy)
 
 ## License
